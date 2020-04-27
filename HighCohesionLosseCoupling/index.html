@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Cohesion and loose Coupling</title>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <div id="nameCalculator">
+        <!-- 
+            TIGHT COUPLING IS HERE.  IF WE EDIT THIS HTML IT WILL BREAK THE FUNCTIONALITY.
+            SUPPOSE WE WANT TO CHANGE id FROM 'name' TO 'fullname', OUR APP FUNCTIONALITY WILL BE BROKEN
+            BECAUSE WE HAVE TIGHT COUPLED name IN app.js FOR EVENT BINDING.
+            IT IS BAD
+        -->
+        <div>
+            Your Name : <input type="text" id="name" >
+        </div>
+        <div id="output">Output: </div>
+    </div>
+</body>
+</html>
